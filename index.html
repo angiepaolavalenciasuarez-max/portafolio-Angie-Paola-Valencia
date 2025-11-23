@@ -12,8 +12,14 @@
   
   <header>
     <nav>
-      <h1>MI PORTAFOLIO</h1>
-      <ul>
+      <h1>ANGIE PAOLA SUAREZ</h1>
+       <!-- Botón hamburguesa (solo móvil) -->
+  <div class="hamburguesa">
+      ☰
+  </div>
+
+      <!-- Menú normal -->
+  <ul class="menu">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
@@ -25,17 +31,14 @@
   
   <section id="inicio">
     <h2>HOLA, SOY ANGIE</h2>
-    <p>Una desarrolladora en formación, apasionada por la tecnología y el aprendizaje constante.</p>
-  </section>
-
-  
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
+    <p>Una desarrolladora en formación, apasionada por la tecnología y el aprendizaje constante.
       Soy una joven de 19 años, estudiante de <strong>Análisis y Desarrollo de Software</strong>,
       apasionada por la tecnología y la creación de soluciones digitales innovadoras.
     </p>
+     <img src="./img/unnamed mia.jpg" alt="mia">
   </section>
+
+  
 
   
   <section id="proyectos">
@@ -44,6 +47,7 @@
     <div class="proyectos-grid">
 
       <div class="card">
+        <img src="./img/unnamed.jpg panaderia verde.jpg" alt="proyecto panaderia verde ">
         <h3>Proyecto 1</h3>
         <p>
           Es una idea de sistema informático (una aplicación web) llamada <strong>Panadería Verde</strong>.
@@ -51,6 +55,7 @@
       </div>
 
       <div class="card">
+        <img src="./img/unnamed.jpg  diseño web 3.jpg" alt="proyecto educativo">
         <h3>Proyecto 2</h3>
 
         <p>
@@ -60,6 +65,7 @@
 
       <div class="card">
         <h3>Proyecto 3</h3>
+        <img src="./img/unnamed.jpg portafolio..jpg" alt="portafolio personal">
         <p>
           Es mi portafolio con estilo limpio y moderno, creado con HTML y CSS.
         </p>
@@ -68,25 +74,44 @@
     </div>
   </section>
 
-  
-
-
-
-
-
+<section id="mi_objetivo">
+    <h2>Mi objetivo</h2>
+    <p>Es convertirme en una desarrolladora web profesional.
+  Me encanta crear páginas funcionales, limpias y con buena experiencia de usuario.
+  Estoy trabajando en mejorar mis conocimientos en desarrollo
+   frontend y más adelante aprenderé backend.
+     </p>
+  </section>
 
 
   <section id="contacto">
+
+    <div class="iconos-contacto">
+        <img src="./img/Instagram_logo_2022.svg.webp insta.webp" alt="instagram">
+        <img src="./img/descarga (1).jpg gmail.jpg" alt="gmail">
+        
+    </div>
+
     <h2>Información de contacto</h2>
     <p><strong>Correo electrónico:</strong> angiepaolavalenciasuarez@gmail.com</p>
-    <p><strong>Celular:</strong> +57 3147460744</p>
     <p><strong>Instagram:</strong> <a href="https://instagram.com/av_suarez" target="_blank">@av_suarez</a></p>
-  </section>
 
-  
+</section>
+
+
   <footer>
     © 2025 Mi PORTAFOLIO PERSONAL — Diseñado por Angie 💜
   </footer>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('activo');
+  menu.classList.toggle('activo');
+});
+</script>
 
 </body>
 </html> 
