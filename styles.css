@@ -1,11 +1,10 @@
-
 :root {
   --fondo: #f7eefe;
-  --primario:  #c026d3;
-  --secundario:  #701a75;
+  --primario: #c026d3;
+  --secundario: #701a75;
   --texto: #3b0764;
   --texto-suave: #6d28d9;
-  --card:  #f3e7fa;
+  --card: #f3e7fa;
   --radius: 12px;
   --sombra: 0 6px 25px rgba(108, 32, 143, 0.459);
   --trans: all 0.3s ease;
@@ -15,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", system-ui, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -24,6 +23,7 @@ body {
   line-height: 1.6;
 }
 
+/* ---------------- HEADER ---------------- */
 
 header {
   background: rgba(179, 134, 190, 0.445);
@@ -32,13 +32,7 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: var(--sombra);
-
- 
 }
-
-
-
-
 
 nav {
   display: flex;
@@ -71,13 +65,11 @@ nav ul li a:hover {
   color: var(--primario);
 }
 
-
+/* ---------------- INICIO ---------------- */
 
 #inicio {
-  
   text-align: center;
   padding: 90px 20px;
-  
 }
 
 #inicio h2 {
@@ -94,18 +86,19 @@ nav ul li a:hover {
   font-size: 1.05rem;
   padding: 32px;
   border-radius: 10px;
-
 }
 
 #inicio img {
-  width: 200px;        /* tamaño exacto */
-  height: 200px;       /* igual que el width → forma perfecta */
-  object-fit: cover;   /* recorta sin deformar */
-  border-radius: 50%;  /* la vuelve circular */
-  display: block;      
-  margin: 30px auto 0; /* la centra */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto 0;
   box-shadow: var(--sombra);
 }
+
+/* ---------------- PROYECTOS ---------------- */
 
 #proyectos {
   max-width: 1000px;
@@ -125,17 +118,7 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: var(--radius);
-  margin-bottom: 12px;
-}
-
-
 .card {
-
   background: var(--card);
   border-radius: var(--radius);
   padding: 18px;
@@ -148,6 +131,14 @@ nav ul li a:hover {
   background: rgb(147, 202, 241);
 }
 
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+
 .card h3 {
   color: var(--primario);
   margin-bottom: 10px;
@@ -157,22 +148,64 @@ nav ul li a:hover {
   color: var(--texto-suave);
 }
 
-#mi_objetivo {
+/* ---------------- OBJETIVO ---------------- */
+
+#mi_objetivo,
+#intereses {
   background: var(--card);
   padding: 40px;
   border-radius: var(--radius);
   width: 85%;
-  max-width: 900px; /* 🔥 Esto ayuda a centrar y que no quede muy ancho */
-  margin: 60px auto;  /* 🔥 El truco que lo centra */
+  max-width: 900px;
+  margin: 60px auto;
   text-align: center;
   box-shadow: var(--sombra);
   transition: var(--trans);
 }
 
+#intereses h2 {
+  color: var(--primario);
+  margin-bottom: 18px;
+  font-size: 1.8rem;
+}
+
+#intereses p {
+  color: var(--texto-suave);
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 22px;
+}
+
+/* Lista de intereses */
+.lista-intereses {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.lista-intereses li {
+  background: var(--fondo);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--secundario);
+  box-shadow: var(--sombra);
+  transition: var(--trans);
+}
+
+.lista-intereses li:hover {
+  transform: translateY(-4px);
+  background: var(--primario);
+  color: white;
+}
+
+/* ---------------- CONTACTO ---------------- */
 
 #contacto {
-
-
   max-width: 900px;
   margin: 60px auto;
   padding: 32px;
@@ -189,10 +222,6 @@ nav ul li a:hover {
 
 #contacto p {
   color: var(--texto-suave);
-  margin: 6px 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
   margin-bottom: 20px;
 }
 
@@ -205,14 +234,13 @@ nav ul li a:hover {
   padding: 10px;
   box-shadow: var(--sombra);
   transition: var(--trans);
-  cursor: pointer;
 }
 
 .iconos-contacto img:hover {
   transform: scale(1.12);
 }
 
-
+/* ---------------- FOOTER ---------------- */
 
 footer {
   text-align: center;
@@ -223,108 +251,7 @@ footer {
   font-size: 0.9rem;
 }
 
-
-
-
-@media (max-width: 900px) {
-
-  nav {
-    padding: 14px 20px;
-  }
-
-  #inicio {
-    padding: 70px 16px;
-  }
-
-  #inicio h2 {
-    font-size: 1.8rem;
-  }
-
-  #inicio p {
-    font-size: 1rem;
-    padding: 26px;
-  }
-
-  #inicio img {
-    width: 170px;
-    height: 170px;
-  }
-
-  #proyectos {
-    max-width: 90%;
-  }
-
-  #mi_objetivo {
-    width: 90%;
-    padding: 32px;
-  }
-
-  #contacto {
-    padding: 24px;
-  }
-
-  .iconos-contacto img {
-    width: 55px;
-    height: 55px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  /* NAV */
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  nav h1 {
-    font-size: 1.2rem;
-  }
-
-  /* INICIO */
-  #inicio {
-    padding: 60px 14px;
-  }
-
-  #inicio h2 {
-    font-size: 1.6rem;
-  }
-
-  #inicio p {
-    font-size: 0.95rem;
-    padding: 22px;
-  }
-
-  #inicio img {
-    width: 140px;
-    height: 140px;
-  }
-
-  /* PROYECTOS */
-  .proyectos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* MI OBJETIVO */
-  #mi_objetivo {
-    width: 95%;
-    padding: 26px;
-  }
-
-  /* CONTACTO */
-  #contacto {
-    width: 95%;
-    padding: 24px;
-  }
-
-  .iconos-contacto img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-/* ---menu amburguesa con animacion--- */
+/* ---------------- MENÚ HAMBURGUESA ---------------- */
 
 .hamburguesa {
   width: 32px;
@@ -340,10 +267,9 @@ footer {
   height: 4px;
   background: var(--primario);
   border-radius: 8px;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
-/* Icono animado a "X" cuando se abre */
 .hamburguesa.activo span:nth-child(1) {
   transform: translateY(11px) rotate(45deg);
 }
@@ -356,28 +282,81 @@ footer {
   transform: translateY(-11px) rotate(-45deg);
 }
 
-@media (max-width: 600px) {
+/* ---------------- RESPONSIVE ---------------- */
 
-  .hamburguesa {
-    display: flex;
+@media (max-width: 900px) {
+  #inicio img {
+    width: 170px;
+    height: 170px;
   }
 
-  .menu {
+  #mi_objetivo,
+  #intereses {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
     display: none;
     flex-direction: column;
+    align-items: center;
     background: var(--card);
     padding: 20px;
     border-radius: var(--radius);
     margin-top: 15px;
     box-shadow: var(--sombra);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: 0.3s ease;
   }
 
   .menu.activo {
     display: flex;
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  #inicio img {
+    width: 140px;
+    height: 140px;
+  }
+
+  #intereses,
+  #mi_objetivo,
+  #contacto {
+    width: 95%;
+    padding: 28px;
+  }
+
+  .lista-intereses li {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* --- ANIMACIÓN PROFESIONAL PARA PORTAFOLIO --- */
+@keyframes softSlideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-4px);
+    filter: blur(0px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ELEMENTOS QUE SERÁN ANIMADOS */
+section,
+.card,
+#inicio img,
+h2 {
+  animation: softSlideFade 1.1s ease-out forwards;
+  opacity: 0;
 }

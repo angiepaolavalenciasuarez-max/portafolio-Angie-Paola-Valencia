@@ -11,107 +11,115 @@
 
   
   <header>
+     <header>
     <nav>
       <h1>ANGIE PAOLA SUAREZ</h1>
-       
- <div class="hamburguesa" id="menu-btn">
-      ☰
-  </div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburguesa" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <!-- Menú -->
       <ul class="menu" id="menu">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#objetivo">objetivo</a></li>
+        <li><a href="#mi_objetivo">Objetivo</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#intereses">Intereses</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  
   <section id="inicio">
     <h2>HOLA, SOY ANGIE</h2>
-    <p>Una desarrolladora en formación, apasionada por la tecnología y el aprendizaje constante.
-      Soy una joven de 19 años, estudiante de <strong>Análisis y Desarrollo de Software</strong>,
-      apasionada por la tecnología y la creación de soluciones digitales innovadoras.
+    <p>
+      Una desarrolladora en formación, apasionada por la tecnología y el aprendizaje constante.
+      Soy una joven de 19 años, estudiante de <strong>Análisis y Desarrollo de Software</strong>.
     </p>
-     <img src="./img/unnamed mia.jpg" alt="mia">
+    <img src="./img/unnamed mia.jpg" alt="Foto personal">
   </section>
 
-  
-
-  
   <section id="proyectos">
-    <h2>Mis proyectos</h2>
+    <h2>Mis Proyectos</h2>
 
     <div class="proyectos-grid">
 
       <div class="card">
-        <img src="./img/unnamed.jpg panaderia verde.jpg" alt="proyecto panaderia verde ">
+        <img src="./img/unnamed.jpg panaderia verde.jpg" alt="proyecto panaderia verde">
         <h3>Proyecto 1</h3>
-        <p>
-          Es una idea de sistema informático (una aplicación web) llamada <strong>Panadería Verde</strong>.
-        </p>
+        <p>Idea de sistema informático llamado <strong>Panadería Verde</strong>.</p>
       </div>
 
       <div class="card">
         <img src="./img/unnamed.jpg  diseño web 3.jpg" alt="proyecto educativo">
         <h3>Proyecto 2</h3>
-
-        <p>
-          Es una idea de desarrollo web educativo, orientado a la gestión académica y consulta de calificaciones.
-        </p>
+        <p>Desarrollo web educativo para gestión académica.</p>
       </div>
 
       <div class="card">
-        <h3>Proyecto 3</h3>
         <img src="./img/unnamed.jpg portafolio..jpg" alt="portafolio personal">
-        <p>
-          Es mi portafolio con estilo limpio y moderno, creado con HTML y CSS.
-        </p>
+        <h3>Proyecto 3</h3>
+        <p>Mi portafolio personal hecho con HTML y CSS.</p>
       </div>
 
     </div>
   </section>
 
-<section id="mi_objetivo">
+  <section id="mi_objetivo">
     <h2>Mi objetivo</h2>
-    <p>Es convertirme en una desarrolladora web profesional.
-  Me encanta crear páginas funcionales, limpias y con buena experiencia de usuario.
-  Estoy trabajando en mejorar mis conocimientos en desarrollo
-   frontend y más adelante aprenderé backend.
-     </p>
+    <p>
+      Convertirme en desarrolladora web profesional, creando páginas modernas, funcionales
+      y con excelente experiencia de usuario. Actualmente mejoro mis habilidades en frontend
+      y más adelante estudiaré backend.
+    </p>
   </section>
 
+  <section id="intereses">
+    <h2>Mis intereses</h2>
+    <p>
+      Me apasiona la tecnología, el diseño web, el aprendizaje constante y crear proyectos útiles.
+      También disfruto estudiar programación, bases de datos, ciberseguridad y metodologías ágiles.
+    </p>
+
+    <ul class="lista-intereses">
+      <li>Desarrollo Web</li>
+      <li>Diseño UI/UX</li>
+      <li>Ciberseguridad</li>
+      <li>Metodologías Ágiles</li>
+      <li>Frontend & Backend</li>
+      <li>Innovación tecnológica</li>
+    </ul>
+  </section>
 
   <section id="contacto">
 
     <div class="iconos-contacto">
-        <img src="./img/Instagram_logo_2022.svg.webp insta.webp" alt="instagram">
-        <img src="./img/descarga (1).jpg gmail.jpg" alt="gmail">
-        
+      <img src="./img/Instagram_logo_2022.svg.webp insta.webp" alt="instagram">
+      <img src="./img/descarga (1).jpg gmail.jpg" alt="gmail">
     </div>
 
     <h2>Información de contacto</h2>
-    <p><strong>Correo electrónico:</strong> angiepaolavalenciasuarez@gmail.com</p>
+    <p><strong>Correo:</strong> angiepaolavalenciasuarez@gmail.com</p>
     <p><strong>Instagram:</strong> <a href="https://instagram.com/av_suarez" target="_blank">@av_suarez</a></p>
 
-</section>
-
+  </section>
 
   <footer>
     © 2025 Mi PORTAFOLIO PERSONAL — Diseñado por Angie 💜
   </footer>
 
-<script>
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
 
-btn.addEventListener('click', () => {
-  btn.classList.toggle('activo');
-  menu.classList.toggle('activo');
-});
-</script>
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('activo');
+      menu.classList.toggle('activo');
+    });
+  </script>
 
 </body>
-</html> 
+</html>
